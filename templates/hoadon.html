@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thanh toán - Website Phụ kiện - Duy Nguyễn</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <style>
+        body {
+            margin-top: 56px;
+        }
+        
+        .sidebar-sticky {
+            z-index: 0 !important;
+        }
+
+        input {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-white shadow-sm fixed-top" style="background: #356690 !important;">
+        <a class="navbar-brand h1">Phụ Kiện Béo</a>
+        <form class="form-inline mr-auto">
+            <input class="form-control rounded-0" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success my-2 my-sm-0 rounded-left rounded-0" type="submit">Tìm kiếm</button>
+        </form>
+        <div class="btn-group mr-2" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Đăng nhập</button>
+            <button type="button" class="btn btn-secondary">Đăng ký</button>
+        </div>
+        <!-- cart -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-info rounded-0"><i class="fas fa-shopping-cart"></i></button>
+            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </div>
+        <!-- endcart -->
+    </nav>
+    <!-- main -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="sidebar-sticky fixed-top px-1" style="margin-top:56px">
+                <!-- <div class="px-1"> -->
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1  text-success">
+                      <span><i class="fas fa-plus-circle"></i> Danh mục sản phẩm</span>
+
+                    </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <i class="fas fa-caret-right"></i> Phụ kiện Iphone
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <i class="fas fa-caret-right"></i> Phụ kiện Samsung
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <i class="fas fa-caret-right"></i> Phụ kiện Xiaomi
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <i class="fas fa-caret-right"></i> Phụ kiện Oppo
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <i class="fas fa-caret-right"></i> Phụ kiện Sony
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <i class="fas fa-caret-right"></i> Phụ kiện hãng khác
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-1 text-success px-3">
+          <span><i class="fas fa-plus-circle"></i> Website</span>
+        </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <i class="fas fa-caret-right"></i> Chính sách bảo hành
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <i class="fas fa-caret-right"></i> Đổi trả hàng
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">
+                                <i class="fas fa-caret-right"></i> Tin tức
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 border-left">
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-2 text-success" style="border-bottom: 1px dashed #ccc">
+                  <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Giỏ hàng</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Thông tin giao hàng</li>
+                      </ol>
+                    </nav>
+                </h6>
+                <!-- hoa don -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="h4">Thông tin giao hàng</h1>
+                        <form>
+                            <div class="form-group">
+                            <label for="inputAddress">Họ tên</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="điền họ và tên">
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4" placeholder="điền email">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Số điện thoại</label>
+                              <input type="tel" class="form-control" id="inputPassword4" placeholder="điền số điện thoại">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAddress">Địa chỉ</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="điền địa chỉ nhận">
+                          </div>
+                          <div class="form-group">
+                            <label for="inputState">Phương thức thanh toán</label>
+                              <select id="inputState" class="form-control">
+                                <option selected>Thanh toán khi nhận hàng</option>
+                                <option>Thanh toán qua ATM</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Đồng ý với <a href="#">Điều Khoản</a> của cửa hàng.
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Xác nhận</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 border-left">
+                        <!-- don hang -->
+                        <div class="row border-bottom py-1">
+                            <div class="col-3">
+                                <img src="https://via.placeholder.com/70" alt="">
+                            </div>
+                            <div class="col-6">
+                                <p>Tai Nghe Bluetooth Creative Outlier Sports (1)</p>
+                                <p>Xanh đen</p>
+                            </div>
+                            <div class="col-3">
+                                500$
+                            </div>
+                        </div>
+                        <div class="row border-bottom py-1">
+                            <div class="col-3">
+                                <img src="https://via.placeholder.com/70" alt="">
+                            </div>
+                            <div class="col-6">
+                                <p>Tai Nghe Airpod 2019 (1)</p>
+                                <p>Xanh đen</p>
+                            </div>
+                            <div class="col-3">
+                                500$
+                            </div>
+                        </div>
+                        <!-- end don hang -->
+                        <div class="row justify-content-between py-2">
+                            <div class="col-3">Tạm tính</div>
+                            <div class="col-3">1000$</div>
+                        </div>
+                        <div class="row justify-content-between py-2">
+                            <div class="col-3">Phí vận chuyển</div>
+                            <div class="col-3">2$</div>
+                        </div>
+                        <div class="row justify-content-between border-top py-2">
+                            <div class="col-3 h6">Tổng cộng</div>
+                            <div class="col-3 h6">1002$</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer bg-light border-top">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <p class="h6">DỊCH VỤ KHÁCH HÀNG</p>
+                <ul>
+                    <li>Chính sách bảo hành</li>
+                    <li>Chính sách giao hàng</li>
+                    <li>Hướng dẫn thanh toán</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p class="h6">LIÊN HỆ VỚI DUYBEO.VN</p>
+                <ul>
+                    <li>Hotline : 19001001</li>
+                    <li>Email : Duykhonggay@hotmail.com</li>
+                    <li>Bản đồ địa chỉ</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p class="h6">KẾT NỐI</p>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Zalo</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
